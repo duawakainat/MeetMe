@@ -100,10 +100,26 @@ body {
 
 .marG_T {
     position: relative;
-    bottom: -70px !important;
+    bottom: -79px !important;
+    min-height: 700px !important;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+    border-radius: 12px;
+    margin-bottom: 79px;
+
+    @media only screen and (min-width:578px) and (max-width:1200px) {
+        bottom: -8px !important;
+        bottom: -60px !important;
+    }
 
     @media only screen and (min-width:992px) and (max-width:1200px) {
         bottom: -8px !important;
+    }
+
+    @media only screen and (min-width:300px) and (max-width:578px) {
+        min-height: 500px;
+        bottom: 0px !important;
+        border-radius: 0px;
+        padding: 30px 15px;
     }
 }
 
@@ -159,7 +175,7 @@ body {
     }
 
     @media only screen and (min-width:300px) and (max-width:480px) {
-        padding: 30px 0px;
+        padding: 30px 3px;
     }
 
 }
@@ -426,11 +442,22 @@ color: #777777; */
     font-weight: 500 !important;
     border: 1px solid #9ab5f5;
     border-radius: 5px;
+
+    @media only screen and (min-width:300px) and (max-width: 578px) {
+        padding: 0 18px;
+        line-height: 42px;
+    }
 }
 
 .Db_btn_1 {
     margin-right: 14px;
-    background-color: #9ab5f5;
+    background-color: #fff;
+    color: #000;
+}
+
+.Db_btn_2 {
+    margin-right: 14px;
+    background-color: #ffffff1A;
     color: #fff;
 }
 
@@ -456,6 +483,7 @@ color: #777777; */
     font-size: 16px;
     display: flex;
     flex-wrap: nowrap;
+    color: #ffffffBf;
 }
 
 .Mar_20 {
@@ -473,7 +501,7 @@ color: #777777; */
     margin: 0;
     padding: 0;
     font-family: 'Heebo', sans-serif;
-    color: #fff;
+    color: #ffffffBf;
 }
 
 .lint_vert::before {
@@ -487,11 +515,17 @@ color: #777777; */
     transform: translateX(-50%);
     top: -5px;
 
+
+
+
+}
+
+.lint_vert::after {
     @media only screen and (min-width:300px) and (max-width: 578px) {
         /* display: none; */
         width: 0px !important;
         left: 0%;
-        position: relative;
+        background: red;
     }
 }
 
@@ -537,4 +571,19 @@ color: #777777; */
 
 .mar_BoT {
     margin-bottom: 60px;
+}
+
+.marG_T {
+    /* margin-bottom: 200px; */
+}
+
+.Display_2 {
+    @media only screen and (min-width:300px) and (max-width:578px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media only screen and (min-width:300px) and (max-width:480px) {
+        padding: 0px 15px;
+    }
 }
