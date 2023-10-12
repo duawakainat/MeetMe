@@ -483,7 +483,7 @@ color: #777777; */
     font-size: 16px;
     display: flex;
     flex-wrap: nowrap;
-    color: #ffffffBf;
+    color: #ffffffBf !important;
 }
 
 .Mar_20 {
@@ -501,7 +501,7 @@ color: #777777; */
     margin: 0;
     padding: 0;
     font-family: 'Heebo', sans-serif;
-    color: #ffffffBf;
+    color: #ffffffBf !important;
 }
 
 .lint_vert::before {
