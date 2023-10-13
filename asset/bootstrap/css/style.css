@@ -5,6 +5,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
 }
+}
 
 /* * {
     border: 1px solid #434;
@@ -258,6 +259,11 @@ color: #777777; */
 .P_120 {
     padding-top: 120px;
     padding-bottom: 120px;
+
+    @media only screen and (min-width:300px) and (max-width: 578px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }
 
 .H4_38 {
@@ -497,7 +503,6 @@ color: #777777; */
 
 .P_heeb0 {
     font-size: 16px;
-    font-family: 16px;
     margin: 0;
     padding: 0;
     font-family: 'Heebo', sans-serif;
@@ -587,3 +592,131 @@ color: #777777; */
         padding: 0px 15px;
     }
 }
+
+
+.icon_61 {
+    /* content: ; */
+    content: "\e801";
+    font-size: 61px;
+    margin-bottom: 35px;
+    color: #e1e1e1;
+}
+
+.icon_61:hover {
+    background-image: linear-gradient(to right, #766dff 0%, #88f3ff 100%);
+    /* Initial gradient */
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: background-image 0.3s ease;
+}
+
+.bg-difff {
+    background-color: #f9f9ff;
+    ;
+}
+
+.div_card {
+    padding: 50px 35px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+.Head_4 {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 20px;
+}
+
+.Para_16 {
+    font-size: 16px;
+    color: #777777;
+}
+
+.padd_15 {
+    padding: 0 15px;
+}
+
+.main_title {
+    max-width: 670px;
+    margin: 0 auto 75px;
+    text-align: center;
+
+    @media only screen and (min-width:300px) and (max-width:700px) {
+        max-width: 100%;
+        max-width: 0 auto 75px;
+        text-align: center;
+    }
+}
+
+.padd_15_2 {
+    @media only screen and (min-width:300px) and (max-width:480px) {
+        padding: 0px 15px;
+    }
+}
+
+.font_36 {
+    font-size: 36px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+
+    @media only screen and (min-width:300px) and (max-width:578px) {
+        font-size: 25px;
+    }
+}
+
+.filter_btan {
+    font-size: 12px;
+    margin-left: 45px;
+}
+
+
+<style>.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+
+    background-image: linear-gradient(to right, #766dff 0%, #88f3ff 100%);
+    transition: .3s ease;
+}
+
+.opicity:hover .overlay {
+    opacity: 1;
+}
+
+.icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.fa-user:hover {
+    color: #eee;
+}
+
+
+<h2>Fade in Overlay Icon</h2><p>Hover over the image to see the effect.</p><div class="container"><img src="img_avatar.png" alt="Avatar" class="image"><div class="overlay"><a href="#" class="icon" title="User Profile"><i class="fa fa-user"></i></a></div></div>
