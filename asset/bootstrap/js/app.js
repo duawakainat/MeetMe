@@ -20,15 +20,16 @@ $('.Db_btn_2').click(function (e) {
 });
 console.log('kainat');
 $(document).ready(function () {
-    $(".tabs li, .category-images img").on('click', function () {
+    $(".tabs li").on('click', function () {
         var category = $(this).data('filter');
 
-        if (category === 'animals') {
+        if (category === 'all') {
             // Show all items
             $(".item").show();
         } else {
             // Hide all items
             $(".item").hide();
+            // $(".item").fadeIn(300);
 
             // Split the selected categories and show items that match any of them
             var selectedCategories = category.split(" ");
@@ -38,3 +39,23 @@ $(document).ready(function () {
         }
     });
 });
+
+$('.owl-carousel').owlCarousel({
+
+    loop: true,
+    margin: 10,
+    nav: true,
+    navSpeed: 100,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        778: {
+            items: 3
+        },
+        1000: {
+            items: 3
+        }
+    }
+})

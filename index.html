@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- fontawesome icon -->
-    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+    <!-- <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav me-0">
                         <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="./asset/page/About.html">About</a>
                         <a class="nav-link" href="#">services</a>
                         <a class="nav-link" href="#">PageS</a>
                         <div class="dropdown">
@@ -232,7 +240,7 @@
                 <p class="Para_16 p-0 m-0">If you are looking at blank cassettes on the web, you may be very confused at
                     the difference in price. You may see some for as low as $.17 each.</p>
             </div>
-            <div class="row align-items-center section_F mx-auto">
+            <div class="row justify-content-center align-items-center section_F mx-auto">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="div_card">
                         <div class="" style="margin-bottom: 35px;">
@@ -248,7 +256,7 @@
                         <div class="" style="margin-bottom: 35px;">
                             <i class="lnr lnr-apartment icon_61"></i>
                         </div>
-                        <h4 class="Head_4">ARCHITECTURE</h4>
+                        <h4 class="Head_4">INTERIOR DESIGN</h4>
                         <p class="Para_16 p-0 m-0">If you are looking at blank cassettes on the web, you may be very
                             confused at the difference in price. You may see some for as low as $17 each. </p>
                     </div>
@@ -258,7 +266,7 @@
                         <div class="" style="margin-bottom: 35px;">
                             <i class="lnr lnr-apartment icon_61"></i>
                         </div>
-                        <h4 class="Head_4">ARCHITECTURE</h4>
+                        <h4 class="Head_4">CONCEPT DESIGN</h4>
                         <p class="Para_16 p-0 m-0">If you are looking at blank cassettes on the web, you may be very
                             confused at the difference in price. You may see some for as low as $17 each. </p>
                     </div>
@@ -267,76 +275,294 @@
         </div>
     </div>
     <!--  -->
-    <div class="container-fluid p-0">
+    <div class="container p-0">
         <div class="P_120">
-            <div class="text-center main_title section_F">
+            <div class="text-center main_title section_F mx-auto">
                 <h2 class="font_36">OUR LATEST FEATURED PROJECTS</h2>
                 <p class="Para_16 p-0 m-0">Who are in extremely love with eco friendly system.</p>
             </div>
-            <div class="section_F mx-auto">
+            <div class="section_F mx-auto" style="margin-bottom: 50px;">
                 <ul class="tabs nav nav-pills d-flex justify-content-center align-items-center mx-auto">
-                    <li data-filter="all" class="active filter_btan">All</li>
-                    <li data-filter="VECTOR" class="filter_btan">VECTOR</li>
-                    <li data-filter="RASTER" class="filter_btan">RASTER</li>
-                    <li data-filter="UI/ UX" class="filter_btan">UI/ UX</li>
+                    <li data-filter="all" class="filter_btan">All</li>
+                    <li data-filter="nature" class="filter_btan">VECTOR</li>
+                    <li data-filter="animals" class="filter_btan">RASTER</li>
+                    <li data-filter="UI/UX" class="filter_btan">UI/UX</li>
                     <li data-filter="PRINTING" class="filter_btan">PRINTING</li>
                 </ul>
             </div>
-            <div class="container text-center section_F">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-4 col-sm-4" style="padding: 0 15px;">
-                        <div class="card">
-                            <div class="opicity">
-                                <img src="./asset/image/project-1.jpg.webp" class="card-img-top image" alt="...">
-                                <div class="overlay">
-                                    <a href="#" class="icon" title="User Profile">
-                                        <i class="fa fa-user"></i>
-                                    </a>
+            <div class="category-images">
+                <div class="row align-items-center position-relative section_F mx-auto">
+                    <div class="item col-lg-4 col-md-4 col-sm-6 text-center" data-category="all animals">
+                        <div class="d-flex justify-content-around mx-auto" style="padding: 0 15px;">
+                            <div class="border-0 p-0">
+                                <div class="opicity">
+                                    <img src="./asset/image/project-1.jpg.webp" class="card-img-top image" alt="...">
+                                    <div class="overlay">
+                                        <a href="#" class="icon" title="User Profile">
+                                            <i class='fas fa-binoculars' style='font-size:48px;color:white'></i>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card-body">
-                                <h4 class="Head_4" style="margin: 22px 0 8px;">3D Helmet Design</h4>
-                                <p class="Para_16 p-0 m-0">Client Project</p>
+                                <div class="card-body" style="margin-bottom: 35px;">
+                                    <h4 class="Head_4" style="margin: 22px 0 8px;">3D Helmet Design</h4>
+                                    <p class="Para_16 p-0 m-0">Client Project</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4"> One of three columns </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4"> One of three columns </div>
+                    <div class="item col-lg-4 col-md-4 col-sm-6 text-center" data-category="nature city">
+                        <div class="d-flex justify-content-around" data-category="all VECTOR RASTER PRINTING"
+                            style="padding: 0 15px;">
+                            <div class="border-0">
+                                <div class="opicity">
+                                    <img src="./asset/image/project-2.jpg.webp" class="card-img-top image" alt="...">
+                                    <div class="overlay">
+                                        <a href="#" class="icon" title="User Profile">
+                                            <i class='fas fa-binoculars' style='font-size:48px;color:white'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body" style="margin-bottom: 35px;">
+                                    <h4 class="Head_4" style="margin: 22px 0 8px;">3D Disposable Bottle</h4>
+                                    <p class="Para_16 p-0 m-0">Client Project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="item col-lg-4 col-md-4 col-sm-6 text-center" data-category="nature city">
+                        <div class="d-flex justify-content-around" data-category="all VECTOR RASTER PRINTING"
+                            style="padding: 0 15px;">
+                            <div class="border-0">
+                                <div class="opicity">
+                                    <img src="./asset/image/project-3.jpg.webp" class="card-img-top image" alt="...">
+                                    <div class="overlay">
+                                        <a href="#" class="icon" title="User Profile">
+                                            <i class='fas fa-binoculars' style='font-size:48px;color:white'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body" style="margin-bottom: 35px;">
+                                    <h4 class="Head_4" style="margin: 22px 0 8px;">3D Disposable Bottle</h4>
+                                    <p class="Para_16 p-0 m-0">Client Project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-lg-4 col-md-4 col-sm-6 text-center" data-category="PRINTING city">
+                        <div class="d-flex justify-content-around" data-category="all VECTOR RASTER PRINTING"
+                            style="padding: 0 15px;">
+                            <div class="border-0">
+                                <div class="opicity">
+                                    <img src="./asset/image/project-4.jpg.webp" class="card-img-top image" alt="...">
+                                    <div class="overlay">
+                                        <a href="#" class="icon" title="User Profile">
+                                            <i class='fas fa-binoculars' style='font-size:48px;color:white'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body" style="margin-bottom: 35px;">
+                                    <h4 class="Head_4" style="margin: 22px 0 8px;">3D Disposable Bottle</h4>
+                                    <p class="Para_16 p-0 m-0">Client Project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-lg-4 col-md-4 col-sm-6 text-center" data-category="nature UI/UX">
+                        <div class="d-flex justify-content-around" data-category="all VECTOR RASTER PRINTING"
+                            style="padding: 0 15px;">
+                            <div class="border-0">
+                                <div class="opicity">
+                                    <img src="./asset/image/project-5.jpg.webp" class="card-img-top image" alt="...">
+                                    <div class="overlay">
+                                        <a href="#" class="icon" title="User Profile">
+                                            <i class='fas fa-binoculars' style='font-size:48px;color:white'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body" style="margin-bottom: 35px;">
+                                    <h4 class="Head_4" style="margin: 22px 0 8px;">3D Disposable Bottle</h4>
+                                    <p class="Para_16 p-0 m-0">Client Project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-lg-4 col-md-4 col-sm-6 text-center" data-category="PRINTING UI/UX">
+                        <div class="d-flex justify-content-around" data-category="all VECTOR RASTER PRINTING"
+                            style="padding: 0 15px;">
+                            <div class="border-0">
+                                <div class="opicity">
+                                    <img src="./asset/image/project-6.jpg.webp" class="card-img-top image" alt="...">
+                                    <div class="overlay">
+                                        <a href="#" class="icon" title="User Profile">
+                                            <i class='fas fa-binoculars' style='font-size:48px;color:white'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body" style="margin-bottom: 35px;">
+                                    <h4 class="Head_4" style="margin: 22px 0 8px;">3D Disposable Bottle</h4>
+                                    <p class="Para_16 p-0 m-0">Client Project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
                 </div>
             </div>
         </div>
     </div>
-    <ul class="tabs">
-        <li data-filter="all">All</li>
-        <li data-filter="nature">Nature</li>
-        <li data-filter="animals">Animals</li>
-        <li data-filter="city">City</li>
-    </ul>
-    <div class="category-images">
-        <img class="item" data-category="animals" src="./asset/image/project-1.jpg.webp" alt="All">
-        <img class="item" data-category="animals city" src="./asset/image/project-2.jpg.webp" alt="Nature">
-        <img class="item" data-category="nature city" src="./asset/image/project-3.jpg.webp" alt="Animals">
-        <img class="item" data-category="nature city" src="./asset/image/project-4.jpg.webp" alt="City">
+    <!--  -->
+    <div class="container-fluid p-0 bg-difff">
+        <div class="P_120 section_F mx-auto">
+            <div class="text-center main_title">
+                <h2 class="font_36">TESTIMONIALS</h2>
+                <p class="Para_16 p-0 m-0">If you are looking at blank cassettes on the web, you may be very confused at
+                    the difference in price. You may see some for as low as $.17 each.</p>
+            </div>
+            <div class="">
+                <div class="owl-carousel owl-theme mx-auto">
+                    <div class="item_owl">
+                        <div class="div_card_2">
+                            <p class="Para_16 p-0" style="margin-bottom: 16px;"><i>As conscious traveling Paup ers we
+                                    must always be oncerned about our dear Mother Earth. If you think about it, you
+                                    travel across her face</i>
+                            </p>
+                            <h4 class="s_18">Fanny Spencer</h4>
+                            <div><i class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_owl">
+                        <div class="div_card_2">
+                            <p class="Para_16 p-0" style="margin-bottom: 16px;"><i>As conscious traveling Paup ers we
+                                    must always be oncerned about our dear Mother Earth. If you think about it, you
+                                    travel across her face</i>
+                            </p>
+                            <h4 class="s_18">Fanny Spencer</h4>
+                            <div><i class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="item">
+                    <div class="div_card_2">
+                        <p class="Para_16 p-0" style="margin-bottom: 16px;"><i>As conscious traveling Paup ers we must
+                                always be oncerned about our dear Mother Earth. If you think about it, you travel across
+                                her face</i>
+                        </p>
+                        <h4 class="s_18">Fanny Spencer</h4>
+                        <div><i class="fa-solid fa-star"
+                                style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                class="fa-solid fa-star"
+                                style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                class="fa-solid fa-star"
+                                style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                class="fa-solid fa-star"
+                                style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                                class="fa-solid fa-star"
+                                style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+                <!-- <div class="item">
+                <div class="div_card_2">
+                    <p class="Para_16 p-0" style="margin-bottom: 16px;"><i>As conscious traveling Paup ers we must
+                            always be oncerned about our dear Mother Earth. If you think about it, you travel across her
+                            face</i>
+                    </p>
+                    <h4 class="s_18">Fanny Spencer</h4>
+                    <div><i class="fa-solid fa-star"
+                            style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                            class="fa-solid fa-star"
+                            style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                            class="fa-solid fa-star"
+                            style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                            class="fa-solid fa-star"
+                            style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i><i
+                            class="fa-solid fa-star"
+                            style="color: #ffc000;font-size: 14px;outline: none;padding-right: 2px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+            </div>
+        </div>
     </div>
-    <div class="gallery">
-        <div class="item" data-category="nature animals">Nature and Animals Image</div>
-        <div class="item" data-category="animals city">Animals and City Image</div>
-        <div class="item" data-category="nature city">Nature and City Image</div>
-        <!-- Add more items with their respective data-category values -->
     </div>
     <!--  -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <!-- icon font-family: 'Linearicons-Free'; -->
-    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-    <!--  -->
-    <script src="./asset/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./asset/bootstrap/js/bootstrap.min.js.map"></script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!--  -->
-    <script src="./asset/bootstrap/js/app.js"></script>
+    <div class="container-fluid bg-black">
+        <div class="section_F P_120 mx-auto">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-sm-6" style="padding: 0 15px;">
+                    <h3 class="Font_18">About Me</h3>
+                    <p class="font_14" style="margin-bottom: 30px;color: #777;">Do you want to be even more successful?
+                        Learn to love learning and growth. The more effort you put into improving your skills,</p>
+                    <p class="font_14 m-0 p-0" style="color: #777;">Copyright ©2023 All rights reserved | This template
+                        is made with <i class="lnr lnr-heart" style="color: #777;font-size: 14px;"></i> by <span
+                            style="color: #766dff;">Colorlib</span>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-sm-6 align-self-start" style="padding: 0 15px;">
+                    <h3 class="Font_18 mt-0 pt-0">Newsletter</h3>
+                    <!-- <h3 class="Font_18 mt-0 pt-0">Newsletter</h3> -->
+                    <p class="font_14" style="color: #777;margin-bottom: 15px;">Stay updated with our latest trends</p>
+                    <div class="input-container">
+                        <input class="input-field" type="text" placeholder="Email" name="email"><button
+                            class="btn_change"><span class="lnr lnr-arrow-right"></span></button>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 align-self-start">
+                    <h3 class="Font_18 mt-0 pt-0">Follow Me</h3>
+                    <!-- <h3 class="Font_18 mt-0 pt-0">Newsletter</h3> -->
+                    <p class="font_14" style="color: #777;margin-bottom: 15px;">Let us be social</p>
+                    <i class="fa-brands fa-facebook-f icon_14"></i><i class="fa-brands fa-twitter icon_14"></i>
+                    <i class="fa-brands fa-dribbble icon_14"></i>
+                    <i class="fa-brands fa-dribbble icon_14"></i>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- owl coural -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+        <!--  -->
+        <!--  -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <!-- icon font-family: 'Linearicons-Free'; -->
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+        <!--  -->
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--  -->
+        <!--  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./asset/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./asset/bootstrap/js/bootstrap.min.js.map"></script>
+        <script src="./asset/bootstrap/js/app.js"></script>
 </body>
 
 </html>
