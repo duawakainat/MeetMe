@@ -40,7 +40,7 @@ $(document).ready(function () {
     });
 });
 
-$('.owl-carousel').owlCarousel({
+$('.first-one').owlCarousel({
 
     loop: true,
     margin: 10,
@@ -59,3 +59,54 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+$('.fitst_owl').owlCarousel({
+
+    loop: true,
+    margin: 10,
+    nav: true,
+    navSpeed: 100,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        778: {
+            items: 3
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
+
+$('.third_owl').owlCarousel({
+
+    loop: true,
+    margin: 10,
+    nav: true,
+    navSpeed: 100,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        778: {
+            items: 3
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
+$(".dropdown-toggle").hover(function(){
+    $(".dropdown-menu").show();
+    console.log('toogle');
+  });
+  $(".dropdown-toggle").mouseout(function(){
+    $(".dropdown-menu").hide();
+    console.log('toogle');
+  });
+// .dropdown-toggle{
+    
+// }
