@@ -99,14 +99,21 @@ $('.third_owl').owlCarousel({
         }
     }
 })
-$(".dropdown-toggle").hover(function(){
-    $(".dropdown-menu").show();
+
+$(".dropdown").hover(function () {
+    $(".dropdown-menu").css('display', 'block');
     console.log('toogle');
-  });
-  $(".dropdown-toggle").mouseout(function(){
-    $(".dropdown-menu").hide();
+});
+$(".dropdown").mouseleave(function () {
+    $(".dropdown-menu").css('display', 'none')
     console.log('toogle');
-  });
-// .dropdown-toggle{
-    
-// }
+});
+$(".dropdown-menu-blog").css('display', 'none')
+$(".dropdown_blog").hover(function () {
+    $(".dropdown-menu-blog").css('display', 'block');
+    console.log('toogle');
+});
+$(".dropdown_blog").mouseleave(function () {
+    $(".dropdown-menu-blog").css('display', 'none')
+    console.log('toogle');
+});
