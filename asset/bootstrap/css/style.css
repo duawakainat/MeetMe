@@ -1323,6 +1323,7 @@ color: #777777; */
 }
 
 .inner_text {
+    position: absolute;
     top: 20px;
     left: 20px;
     right: 20px;
