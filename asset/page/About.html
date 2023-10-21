@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MeetMe</title>
     <!-- owl -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,17 +14,16 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- icon font-family: 'Linearicons-Free'; -->
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <!--  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icon font-family: 'Linearicons-Free'; -->
     <!--  -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css.map">
-    <link href="/your-path-to-uicons/css/uicons-rounded-regular.css" rel="stylesheet">
-    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+    <!-- <link href="/your-path-to-uicons/css/uicons-rounded-regular.css" rel="stylesheet">
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../bootstrap/css/style.css">
 </head>
 
@@ -31,7 +31,7 @@
     <div class="bg_col">
         <nav class="navbar navbar-expand-lg">
             <div class="container d-flex justify-content-between section_F">
-                <a class="navbar-brand" href="#"><img src="./asset/image/logo.png.webp" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="../image/logo.png.webp" alt=""></a>
                 <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -42,17 +42,35 @@
                         <a class="nav-link active text-white" aria-current="page" href="../../index.html">Home</a>
                         <a class="nav-link" href="About.html">About</a>
                         <a class="nav-link" href="./Services.html">services</a>
-                        <a class="nav-link" href="#">PageS</a>
-                        <div class="dropdown">
-                            <button class="btn nav-link bg-transparent dropdown-toggle" type="button"
+                        <div class="dropdown p-0 m-0">
+                            <button class="btn nav-link dropdown-toggle bg-transparent with_icon" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Page</button>
-                            <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">Action</button></li>
-                                <li><button class="dropdown-item" type="button">Another action</button></li>
-                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            <ul class="dropdown-menu p-0 mt-0">
+                                <li class="dropdown-item p-0 mt-0" style="border-bottom: 1px solid #ededed;"><button
+                                        class="dropdown-item p-0 m-0 Width_200" style="width: 200px !important;"
+                                        type="button"><a class="" href="../page/PortFulio.html">PortFulio</a></button>
+                                </li>
+                                <li class="dropdown-item p-0 mt-0"><button class="dropdown-item Width_200 p-0 m-0"
+                                        style="width: 200px !important;" type="button"><a class=""
+                                            href="../page/Element.html">Element</a></button>
+                                </li>
                             </ul>
                         </div>
-                        <a class="nav-link" href="#">Blog</a>
+                        <!--  -->
+                        <div class="dropdown_blog m-0">
+                            <button class="btn nav-link dropdown-toggle bg-transparent with_icon" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Blog</button>
+                            <ul class="dropdown-menu-blog position-absolute  p-0 mt-0">
+                                <li class="dropdown-item p-0 mt-0" style="border-bottom: 1px solid #ededed;">
+                                    <button class="dropdown-item p-0 m-0 Width_200" style="width: 200px !important;"
+                                        type="button"><a class="" href="../page/Blog.html">Blog</a></button>
+                                </li>
+                                <li class="dropdown-item p-0 mt-0"><button class="dropdown-item Width_200 p-0 m-0"
+                                        style="width: 200px !important;" type="button"><a class=""
+                                            href="../page/Blog_Detail.html">Blog Detail</a></button>
+                                </li>
+                            </ul>
+                        </div>
                         <a class="nav-link m-0 p-0" href="./contact.html">Contact</a>
                     </div>
                 </div>
@@ -66,8 +84,9 @@
                 <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
                     <ol class="breadcrumb" style="list-style-type: none;">
                         <li class="breadcrumb-item"><a class="breadcrumb-item" style="padding-right: 8px;"
-                                href="#">Home</a><span class="lnr lnr-arrow-right"></span></li>
-                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                href="../../index.html">Home</a><span class="lnr lnr-arrow-right"></span></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a class="breadcrumb-item"
+                                style="padding-right: 8px;" href="About.html">About</a></li>
                     </ol>
                 </nav>
             </div>
@@ -283,6 +302,12 @@
             </div>
         </div>
         <!--  -->
+        <!--  -->
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+        <!--  -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
         <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -293,9 +318,8 @@
             integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!--  -->
-        <script src="../bootstrap/bootstrap.min.js"></script>
-        <script src="../bootstrap/bootstrap.min.js.map"></script>
+        <script src="../bootstrap/js/bootstrap.min.js.map"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
         <script src="../bootstrap/js/app.js"></script>
-</body>
 
 </html>
