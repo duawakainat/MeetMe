@@ -110,7 +110,7 @@ body {
     border-radius: 12px;
     margin-bottom: 79px;
 
-    @media only screen and (min-width:578px) and (max-width:1200px) {
+    @media only screen and (min-width:992px) and (max-width:1200px) {
         bottom: -8px !important;
         bottom: -60px !important;
     }
@@ -124,6 +124,7 @@ body {
         bottom: 0px !important;
         border-radius: 0px;
         padding: 30px 15px;
+        margin-bottom: 0px;
     }
 }
 
@@ -182,6 +183,8 @@ body {
 }
 
 .Display_col {
+    /* height: 800px; */
+
     @media only screen and (min-width:300px) and (max-width:578px) {
         display: flex;
         flex-direction: column;
@@ -492,6 +495,7 @@ color: #777777; */
     font-weight: 500 !important;
     border: 1px solid #9ab5f5;
     border-radius: 5px;
+    border: none;
 
     @media only screen and (min-width:300px) and (max-width: 578px) {
         padding: 0 18px;
@@ -503,6 +507,7 @@ color: #777777; */
     margin-right: 14px;
     background-color: #fff;
     color: #000;
+
 }
 
 .Db_btn_2 {
@@ -565,8 +570,16 @@ color: #777777; */
     top: -5px;
 
 
+}
 
+@media only screen and (min-width:300px) and (max-width: 578px) {
+    .lint_vert::before {
 
+        width: 1px !important;
+        display: none;
+        content: unset;
+        background: rgba(255, 255, 255, 01) !important;
+    }
 }
 
 .lint_vert::after {
@@ -638,15 +651,15 @@ color: #777777; */
 }
 
 
-.icon_61 {
+.icon_61::before {
     /* content: ; */
-    content: "\e801";
-    font-size: 61px;
+    /* content: "\e801"; */
+    width: 61px;
     margin-bottom: 35px;
     color: #e1e1e1;
 }
 
-.icon_61:hover {
+.icon_61:hover::before {
     background-image: linear-gradient(to right, #766dff 0%, #88f3ff 100%);
     /* Initial gradient */
     color: transparent;
@@ -1652,3 +1665,221 @@ color: #777777; */
 }
 
 .input-field_3 {}
+
+
+/* Styles for the image pop-up and navigation */
+/* .image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popup-trigger {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.image-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    text-align: center;
+}
+
+.popup-image {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+/* 
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+} */
+
+/* .close-button:hover {
+    opacity: 0.7; */
+/* Hover effect for the close button */
+/* } */
+
+/* .image-navigation {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    max-width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    
+} */
+
+/* .prev-image,
+.next-image {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+} */
+
+/* .prev-image { */
+/* position: absolute;
+    margin-right: 20px;
+    left: 0;
+    vertical-align: middle; */
+
+/* } */
+/* 
+.next-image {
+    margin-left: 20px;
+} */
+/* Styles for the image pop-up and icon effect */
+/* Styles for the image popup with hover effect */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.image-container:hover {
+    /* opacity: 0.8; */
+}
+
+.popup-trigger {
+    position: relative;
+    /* width: 100px;
+    height: 100px; */
+    cursor: pointer;
+    /* margin: 5px; */
+}
+
+.popup-trigger img {
+    width: 100%;
+    height: 100%;
+}
+
+.hover-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #766dff 0%, #88f3ff 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    /* opacity: 0.8; */
+}
+
+/* .hover-element:hover {
+    opacity: 0.5;
+} */
+
+.hover-element i {
+    font-size: 30px;
+}
+
+/* .hover-element:hover {
+    opacity: 0.8;
+} */
+
+.image-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    text-align: center;
+}
+
+.popup-image {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    opacity: 0.7;
+    /* Hover effect for the close button */
+}
+
+/* .image-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.image-navigation {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    max-width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+
+}
+
+.prev-image,
+.next-image {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev-image {
+    margin-right: 20px;
+}
+
+.next-image {
+    margin-left: 20px;
+}
+
+/* Styles for button background and text color swap on click */
+.color-change {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.color1 {
+    background: #fff;
+    color: #000;
+}
+
+.color2 {
+    background: #ffffff1A;
+    color: white;
+}
