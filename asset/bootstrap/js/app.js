@@ -28,7 +28,7 @@ $('.first-one').owlCarousel({
 
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     navSpeed: 100,
     autoplay: true,
     responsive: {
@@ -48,7 +48,8 @@ $('.fitst_owl').owlCarousel({
 
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
+
     navSpeed: 100,
     autoplay: true,
     responsive: {
@@ -68,7 +69,7 @@ $('.third_owl').owlCarousel({
 
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     navSpeed: 100,
     autoplay: true,
     responsive: {
