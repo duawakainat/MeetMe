@@ -99,7 +99,28 @@ body {
     z-index: 1;
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 
+    height: 650px !important;
+    margin-bottom: 200px;
 
+    @media only screen and (min-width:992px) and (max-width:1200px) {
+        height: 950px !important;
+        margin-bottom: 128px;
+    }
+
+    @media only screen and (min-width:778px) and (max-width:992px) {
+        height: 1020px !important;
+        margin-bottom: 128px;
+    }
+
+    @media only screen and (min-width:578px) and (max-width:778px) {
+        height: 1035px !important;
+        margin-bottom: 128px;
+    }
+
+    @media only screen and (min-width:300px) and (max-width:578px) {
+        height: 955px !important;
+        margin-bottom: 128px;
+    }
 }
 
 .marG_T {
@@ -108,23 +129,25 @@ body {
     min-height: 700px !important;
     box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
     border-radius: 12px;
-    margin-bottom: 79px;
 
     @media only screen and (min-width:992px) and (max-width:1200px) {
         bottom: -8px !important;
         bottom: -60px !important;
     }
 
+
     @media only screen and (min-width:992px) and (max-width:1200px) {
         bottom: -8px !important;
     }
 
+    @media only screen and (min-width:578px) and (max-width:778px) {}
+
+
+
     @media only screen and (min-width:300px) and (max-width:578px) {
         min-height: 500px;
-        bottom: 0px !important;
         border-radius: 0px;
         padding: 30px 15px;
-        margin-bottom: 0px;
     }
 }
 
