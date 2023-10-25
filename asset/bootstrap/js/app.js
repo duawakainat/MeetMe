@@ -25,7 +25,7 @@ $(document).ready(function () {
 });
 
 $('.first-one').owlCarousel({
-
+    dots: false,
     loop: true,
     margin: 10,
     nav: false,
@@ -45,7 +45,7 @@ $('.first-one').owlCarousel({
 })
 
 $('.fitst_owl').owlCarousel({
-
+    dots: false,
     loop: true,
     margin: 10,
     nav: false,
@@ -66,7 +66,7 @@ $('.fitst_owl').owlCarousel({
 })
 
 $('.third_owl').owlCarousel({
-
+    dots: false,
     loop: true,
     margin: 10,
     nav: false,
