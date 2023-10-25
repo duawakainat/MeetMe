@@ -117,15 +117,15 @@ body {
         margin-bottom: 128px;
     }
 
-    @media only screen and (min-width:409px) and (max-width:578px) {
+    @media only screen and (min-width:300px) and (max-width:578px) {
         height: 955px !important;
-        margin-bottom: 158px;
+        margin-bottom: 97px;
     }
 
-    @media only screen and (min-width:300px) and (max-width:409px) {
+    /* @media only screen and (min-width:300px) and (max-width:409px) {
         height: 955px !important;
         margin-bottom: 128px;
-    }
+    } */
 }
 
 .marG_T {
@@ -153,6 +153,7 @@ body {
         min-height: 500px;
         border-radius: 0px;
         padding: 30px 15px;
+        top: 0;
     }
 }
 
